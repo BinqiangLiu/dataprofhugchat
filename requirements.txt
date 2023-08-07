@@ -2,3 +2,5 @@ streamlit
 hugchat
 streamlit-chat
 streamlit-extras
+streamlit_chat
+streamlit_extras
