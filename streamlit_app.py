@@ -1,5 +1,5 @@
 import streamlit as st
-from streamlit_chat import message
+#from streamlit_chat import message
 from hugchat import hugchat
 from hugchat.login import Login
 
