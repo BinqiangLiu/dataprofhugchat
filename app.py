@@ -21,6 +21,7 @@ hf_pass = ""
 with st.sidebar:
     st.title('🤗💬 HugChat')
 #    if ('EMAIL' in st.secrets) and ('PASS' in st.secrets):
+#    if ('EMAIL' in secrets) and ('PASS' in secrets):
     if ('EMAIL' in st.secrets("/etc/secrets/secrets.toml")) and ('PASS' in st.secrets("/etc/secrets/secrets.toml")):
         st.success('HuggingFace Login credentials already provided!', icon='✅')
 #        hf_email = st.secrets['EMAIL']
