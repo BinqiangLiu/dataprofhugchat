@@ -8,20 +8,6 @@ from hugchat.login import Login
 
 st.set_page_config(page_title="🤗💬 HugChat")
 
-#import streamlit as st
-# Access the secrets
-#secrets = st.secrets("/etc/secrets/secrets.toml")
-# Access individual secrets
-#api_key = secrets["API_KEY"]
-#database_password = secrets["DB_PASSWORD"]
-# Use the secrets in your app
-#st.write("API Key:", api_key)
-#st.write("Database Password:", database_password)
-
-#secrets = st.secrets("/etc/secrets/secrets.toml")
-#hf_email = ""
-#hf_pass = ""
-
 with st.sidebar:
     st.title('🤗💬 HugChat')
     if ('EMAIL' in st.secrets) and ('PASS' in st.secrets):
