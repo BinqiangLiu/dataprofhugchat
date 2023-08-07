@@ -14,9 +14,9 @@ st.set_page_config(page_title="🤗💬 HugChat")
 #st.write("API Key:", api_key)
 #st.write("Database Password:", database_password)
 
-secrets = st.secrets("/etc/secrets/secrets.toml")
-hf_email = ""
-hf_pass = ""
+#secrets = st.secrets("/etc/secrets/secrets.toml")
+#hf_email = ""
+#hf_pass = ""
 
 with st.sidebar:
     st.title('🤗💬 HugChat')
