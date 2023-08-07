@@ -14,13 +14,19 @@ st.set_page_config(page_title="🤗💬 HugChat")
 #st.write("API Key:", api_key)
 #st.write("Database Password:", database_password)
 
+secrets = st.secrets("/etc/secrets/secrets.toml")
+hf_email = ""
+hf_pass = ""
 
 with st.sidebar:
     st.title('🤗💬 HugChat')
-    if ('EMAIL' in st.secrets) and ('PASS' in st.secrets):
+#    if ('EMAIL' in st.secrets) and ('PASS' in st.secrets):
+    if ('EMAIL' in st.secrets("/etc/secrets/secrets.toml")) and ('PASS' in st.secrets("/etc/secrets/secrets.toml")):
         st.success('HuggingFace Login credentials already provided!', icon='✅')
-        hf_email = st.secrets['EMAIL']
-        hf_pass = st.secrets['PASS']
+#        hf_email = st.secrets['EMAIL']
+        hf_email = secrets['EMAIL']
+#        hf_pass = st.secrets['PASS']
+        hf_pass = secrets['PASS']
     else:
         hf_email = st.text_input('Enter E-mail:', type='password')
         hf_pass = st.text_input('Enter password:', type='password')
