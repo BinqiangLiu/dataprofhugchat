@@ -21,7 +21,7 @@ for message in st.session_state.messages:
   # Function for generating LLM response
 def generate_response(prompt_input):
     # Create ChatBot                        
-    chatbot = hugchat.ChatBot(cookie_path = st.secrets['cookies_json_path'])
+    chatbot = hugchat.ChatBot(cookie_path="cookies.json")
     return chatbot.chat(prompt_input)
 
 # User-provided prompt
