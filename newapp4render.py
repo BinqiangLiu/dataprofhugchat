@@ -7,7 +7,7 @@ from hugchat.login import Login
 
 st.set_page_config(page_title="🤗💬 HugChat")
 st.title('🤗💬 HugChat')
-st.markdown('📖 Learn how to build this app in this [blog](https://blog.streamlit.io/how-to-build-an-llm-powered-chatbot-with-streamlit/)!')
+st.write('🤗💬Absolute Free & Opensouce AI Chatbot: HugChat - DataProf & chatMATE/VishnuSivan')
 
 # Store LLM generated responses
 if "messages" not in st.session_state.keys():
